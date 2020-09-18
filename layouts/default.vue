@@ -1,8 +1,23 @@
 <template>
-  <div>
-    <Link to="/">Startsida</Link>
-    <Link to="/mittCv">Mitt CV</Link>
-    <Link to="/omMig">Övrigt om mig</Link>
+  <div class="header">
+    <h1 class="heading">Oskar Kanstedt</h1>
+    <img class="profilbild" src="img/oskar.jpg" alt="oskar" />
+    <Buttons button-text="Startsida" to="/" class="menuButton"></Buttons>
+    <Buttons button-text="Mitt CV" to="/mitt-cv" class="menuButton"></Buttons>
+    <Buttons
+      button-text="Övrigt om mig"
+      to="/om-mig"
+      class="menuButton"
+    ></Buttons>
+    <Buttons
+      button-text="Kontakta mig"
+      to="/kontakt"
+      class="menuButton"
+    ></Buttons>
+    <br />
+    <div>
+      <Nuxt />
+    </div>
   </div>
 </template>
 
@@ -17,41 +32,21 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
+.profilbild {
+  width: 10%;
+  border-radius: 50%;
+  align-self: right;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.heading {
+  font-size: 400%;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.menuButton {
+  padding: 0.2rem;
 }
 </style>

@@ -1,4 +1,14 @@
 <template>
+  <div>
+    <h2>
+      Välkommen till min sida. Här kan du hitta mitt CV, se vad jag gör på
+      fritiden samt kontakta mig.
+    </h2>
+  </div>
+</template>
+
+<!--
+<template>
   <div class="container">
     <div>
       <Logo />
@@ -62,3 +72,4 @@ export default {}
   padding-top: 15px;
 }
 </style>
+-->
