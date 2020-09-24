@@ -5,6 +5,11 @@
     <Buttons button-text="Startsida" to="/" class="menuButton"></Buttons>
     <Buttons button-text="Mitt CV" to="/mitt-cv" class="menuButton"></Buttons>
     <Buttons
+      button-text="Mina repos på Github"
+      to="/app"
+      class="menuButton"
+    ></Buttons>
+    <Buttons
       button-text="Övrigt om mig"
       to="/om-mig"
       class="menuButton"
